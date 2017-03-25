@@ -18,8 +18,16 @@ gulp.task('default', function () {
     });
 });
 
-gulp.task('test', function() {
-  env({vars: {ENV:'test'}});
-  gulp.src('tests/*.js', {read: false})
-    .pipe(gulpMocha({reporter: 'nyan'}));
+gulp.task('test', function () {
+  env({
+    vars: {
+      ENV: 'test'
+    }
+  });
+  gulp.src('tests/*.js', {
+      read: false
+    })
+    .pipe(gulpMocha({
+      reporter: 'nyan'
+    }));
 });

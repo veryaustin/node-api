@@ -10,7 +10,7 @@ var db;
 if (process.env.ENV === 'test') {
   db = mongoose.connect('mongodb://localhost/bookAPI_test');
 } else {
-  db = mongoose.connect('mongodb://localhost/bookAPI_test');
+  db = mongoose.connect('mongodb://localhost/bookAPI');
 }
 
 app.use(bodyParser.urlencoded({
