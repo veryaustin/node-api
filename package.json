@@ -1,0 +1,22 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "Building API's with ExpressJS & NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veryaustin/node-api.git"
+  },
+  "author": "Austin Lauritsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veryaustin/node-api/issues"
+  },
+  "homepage": "https://github.com/veryaustin/node-api#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
