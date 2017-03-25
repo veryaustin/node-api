@@ -4,9 +4,18 @@ var bodyParser = require('body-parser');
 
 var app = express();
 var port = process.env.PORT || 3000;
-var db = mongoose.connect('mongodb://localhost/bookAPI');
 
-app.use(bodyParser.urlencoded({extended:true}));
+var db;
+
+if (process.env.ENV === 'test') {
+  db = mongoose.connect('mongodb://localhost/bookAPI_test');
+} else {
+  db = mongoose.connect('mongodb://localhost/bookAPI_test');
+}
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
 
 // Book Model
@@ -25,3 +34,5 @@ app.get('/', function (req, res) {
 app.listen(port, function () {
   console.log('Running on PORT: ' + port);
 });
+
+module.exports = app;
