@@ -18,7 +18,8 @@
   "homepage": "https://github.com/veryaustin/node-api#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "gulp-nodemon": "^2.0.4"
+    "gulp-nodemon": "^2.0.4",
+    "mongoose": "^3.8.24"
   },
   "devDependencies": {
     "gulp": "^3.9.0"

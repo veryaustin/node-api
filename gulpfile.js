@@ -7,7 +7,7 @@ var nodemon = require('gulp-nodemon');
 gulp.task('default', function () {
   // Run nodemon with the following conig
   nodemon({
-    // Run app.js
+      // Run app.js
       script: 'app.js',
       // Watch for changes of js files
       ext: 'js',
