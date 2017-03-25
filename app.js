@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 var Book = require('./models/bookModel');
 
 // Book Router
-bookRouter = require('./routes/bookRouter')(Book);
+var bookRouter = require('./routes/bookRouter')(Book);
 
 // Use bookRouter for the /api route
 app.use('/api/books', bookRouter);
